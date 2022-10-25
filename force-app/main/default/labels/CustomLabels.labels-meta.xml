@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Case_AccountRequiredError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case AccountRequiredError</shortDescription>
+        <value>You cannot create a request without attaching an account</value>
+    </labels>
+    <labels>
+        <fullName>Case_ContactsRequiredError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case ContactsRequiredError</shortDescription>
+        <value>You cannot create a request for accounts without contacts.</value>
+    </labels>
+    <labels>
+        <fullName>Case_OriginNotAllowedError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case OriginNotAllowedError</shortDescription>
+        <value>You cannot create a request other than Web or Phone requests.</value>
+    </labels>
+    <labels>
+        <fullName>Case_PhoneMaxError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case PhoneMaxError</shortDescription>
+        <value>Phone requests are only allowed to have three attendees.</value>
+    </labels>
+    <labels>
+        <fullName>Case_WebMaxLimitError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case WebMaxLimitError</shortDescription>
+        <value>Web request are only allowed to have one attendee</value>
+    </labels>
+</CustomLabels>
