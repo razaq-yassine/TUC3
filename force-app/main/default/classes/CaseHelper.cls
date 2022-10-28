@@ -42,7 +42,11 @@ public with sharing class CaseHelper {
                 for (Id accountId : accountIds) {
                     // checking if we got the right account
                     if (aCase.AccountId == accountId) {
-                        Integer contactsSize = accountsMap.get(accountId).Contacts.size();
+                        Integer contactsSize = 0;
+                        // Getting Contacts size by loop instead of size() to avoid QueryException
+                        for (Contact aContact : accountsMap.get(accountId).Contacts){
+                            contactsSize++;
+                        }
                         if (contactsSize == 0) {
                             // if contactSize is 0 an Error should be thrown.
                             aCase.addError(System.Label.Case_ContactsRequiredError);

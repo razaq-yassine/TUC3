@@ -29,7 +29,6 @@ public class CaseTriggerHandler extends TriggerHandler {
     }
 
     public override void beforeUpdate() {
-        System.debug('@yassine here');
         CaseHelper.checkAttendees(this.newCases);
     }
 
